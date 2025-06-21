@@ -7,10 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --gold: #FFD700;
+      --gold-gradient: linear-gradient(45deg, #FFD700, #FFC300, #FFB000);
       --black: #000000;
       --white: #FFFFFF;
-      --soft-white: #f8f8f8;
     }
 
     body {
@@ -22,7 +21,10 @@
 
     header {
       background-color: var(--black);
-      color: var(--gold);
+      background-image: var(--gold-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
       text-align: center;
       padding: 60px 20px 40px;
     }
@@ -38,7 +40,7 @@
 
     section {
       padding: 60px 20px;
-      border-bottom: 1px solid var(--gold);
+      border-bottom: 1px solid #FFD700;
       background-color: var(--black);
     }
 
@@ -53,7 +55,10 @@
 
     .step h2 {
       font-size: 1.8em;
-      color: var(--gold);
+      background-image: var(--gold-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .step p {
@@ -63,20 +68,20 @@
     }
 
     .cta-button {
-      background-color: var(--gold);
+      background-image: var(--gold-gradient);
       color: var(--black);
       padding: 12px 24px;
       font-weight: bold;
-      border: 2px solid var(--gold);
+      border: none;
       border-radius: 8px;
       cursor: pointer;
       margin-top: 20px;
-      transition: background 0.3s, color 0.3s;
+      transition: transform 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: var(--white);
-      color: var(--black);
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #FFD700;
     }
   </style>
 </head>

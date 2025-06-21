@@ -36,7 +36,7 @@
     }
 
     .header-flex img {
-      height: 200px; /* Avatar size updated to 200px */
+      height: 200px;
     }
 
     header h1 {
@@ -82,7 +82,7 @@
     .chat {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      gap: 15px;
       margin-bottom: 20px;
     }
 
@@ -101,7 +101,24 @@
       line-height: 1.6em;
       margin: 0;
       color: var(--white);
+      background: var(--gold-mid);
+      padding: 10px 15px;
+      border-radius: 20px;
       max-width: 600px;
+      position: relative;
+    }
+
+    .chat p::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid var(--gold-mid);
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      transform: translateY(-50%);
     }
 
     .cta-button {
@@ -127,7 +144,7 @@
 <header>
   <div class="header-flex">
     <img src="logo.png" alt="Bamra Estates Logo" style="height: 300px; max-width: 100%; width: auto;">
-    <img src="avatar.png" alt="Sunny Avatar">
+    <img src="avatar1.png" alt="Sunny Avatar">
   </div>
   <h1>Let's Make Your Real Estate Journey Simple & Fun</h1>
   <p>Follow Alex — a first-time buyer in Ontario — and see how his questions turn into confidence.</p>
@@ -137,7 +154,7 @@
   <div class="step">
     <h2>Step 1 – Meet Alex</h2>
     <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <img src="avatar1.png" alt="Alex">
       <p><strong>Alex:</strong> "Hi! I’m Alex. I’ve been renting in Mississauga… but buying a home? That feels big."</p>
     </div>
     <div class="chat reverse">
@@ -148,68 +165,7 @@
   </div>
 </section>
 
-<section>
-  <div class="step">
-    <h2>Step 2 – Figuring Out the Budget</h2>
-    <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
-      <p><strong>Alex:</strong> "I don’t want to stretch myself thin. How do I know what I can handle?"</p>
-    </div>
-    <div class="chat reverse">
-      <img src="avatar.png" alt="Me">
-      <p><strong>Me:</strong> "Let’s focus on what feels manageable each month — not just what a bank says."</p>
-    </div>
-  </div>
-</section>
+<!-- Repeat similar structure for the rest of the sections -->
 
-<section>
-  <div class="step">
-    <h2>Step 3 – Picking the Right Area</h2>
-    <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
-      <p><strong>Alex:</strong> "There are so many neighborhoods… how do I even narrow it down?"</p>
-    </div>
-    <div class="chat reverse">
-      <img src="avatar.png" alt="Me">
-      <p><strong>Me:</strong> "Let’s think about what matters to you. Commute? Schools? Future value?"</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="step">
-    <h2>Step 4 – Choosing the Type of Home</h2>
-    <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
-      <p><strong>Alex:</strong> "What’s even the difference? And what’s right for me?"</p>
-    </div>
-    <div class="chat reverse">
-      <img src="avatar.png" alt="Me">
-      <p><strong>Me:</strong> "Let’s compare: low maintenance, more space, or growth potential?"</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="step">
-    <h2>Step 5 – Offer Time</h2>
-    <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
-      <p><strong>Alex:</strong> "This part feels intense. What if I mess it up?"</p>
-    </div>
-    <div class="chat reverse">
-      <img src="avatar.png" alt="Me">
-      <p><strong>Me:</strong> "You’ve got this. Here’s how offers work — and what to avoid."</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="step">
-    <h2>Step 6 – The Win</h2>
-    <div class="chat">
-      <img src="alex-avatar-placeholder.png" alt="Alex">
-      <p><strong>Alex:</strong> "I did it. I bought my first home in Mississauga — and I actually felt ready."</p>
-    </div>
-    <div class="chat reverse">
-      <img src="avatar.png" al
+</body>
+</html>

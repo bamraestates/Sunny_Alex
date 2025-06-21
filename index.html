@@ -7,7 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --gold-gradient: linear-gradient(45deg, #FFD700, #FFC300, #FFB000);
+      --gold-light: #fff1a8;
+      --gold-mid: #ffd700;
+      --gold-dark: #e5ac00;
       --black: #000000;
       --white: #FFFFFF;
     }
@@ -20,11 +22,6 @@
     }
 
     header {
-      background-color: var(--black);
-      background-image: var(--gold-gradient);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
       text-align: center;
       padding: 60px 20px 40px;
     }
@@ -32,15 +29,21 @@
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
 
     header p {
       font-size: 1.2em;
+      color: var(--gold-light);
     }
 
     section {
       padding: 60px 20px;
-      border-bottom: 1px solid #FFD700;
+      border-bottom: 1px solid var(--gold-mid);
       background-color: var(--black);
     }
 
@@ -55,9 +58,10 @@
 
     .step h2 {
       font-size: 1.8em;
-      background-image: var(--gold-gradient);
-      background-clip: text;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
       -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       color: transparent;
     }
 
@@ -68,7 +72,7 @@
     }
 
     .cta-button {
-      background-image: var(--gold-gradient);
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
       color: var(--black);
       padding: 12px 24px;
       font-weight: bold;
@@ -76,12 +80,12 @@
       border-radius: 8px;
       cursor: pointer;
       margin-top: 20px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .cta-button:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 10px #FFD700;
+      box-shadow: 0 0 10px var(--gold-mid);
     }
   </style>
 </head>

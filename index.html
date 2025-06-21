@@ -12,6 +12,7 @@
       --gold-dark: #e5ac00;
       --black: #000000;
       --white: #FFFFFF;
+      --grey-light: #d3d3d3;
     }
 
     body {
@@ -92,7 +93,7 @@
     }
 
     .chat img {
-      height: 50px;
+      height: 200px; /* "Me" Avatar (avatar1.png) on the left */
       border-radius: 50%;
     }
 
@@ -101,8 +102,8 @@
       line-height: 1.6em;
       margin: 0;
       color: var(--white);
-      background: var(--gold-mid);
-      padding: 10px 15px;
+      background: rgba(211, 211, 211, 0.6); /* Cloudy grey background */
+      padding: 15px 20px;
       border-radius: 20px;
       max-width: 600px;
       position: relative;
@@ -115,7 +116,7 @@
       left: -10px;
       width: 0;
       height: 0;
-      border-left: 10px solid var(--gold-mid);
+      border-left: 10px solid rgba(211, 211, 211, 0.6); /* Cloudy grey */
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
       transform: translateY(-50%);

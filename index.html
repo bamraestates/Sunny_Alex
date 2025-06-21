@@ -22,8 +22,21 @@
     }
 
     header {
+      padding: 40px 20px 30px;
       text-align: center;
-      padding: 60px 20px 40px;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+    }
+
+    .header-flex img {
+      height: 60px;
     }
 
     header h1 {
@@ -63,12 +76,32 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       color: transparent;
+      margin-bottom: 20px;
     }
 
-    .step p {
+    .chat {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .chat.reverse {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    .chat img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .chat p {
       font-size: 1.1em;
       line-height: 1.6em;
+      margin: 0;
       color: var(--white);
+      max-width: 600px;
     }
 
     .cta-button {
@@ -92,6 +125,10 @@
 <body>
 
 <header>
+  <div class="header-flex">
+    <img src="logo.png" alt="Bamra Estates Logo">
+    <img src="avatar.png" alt="Sunny Avatar">
+  </div>
   <h1>Let's Make Your Real Estate Journey Simple & Fun</h1>
   <p>Follow Alex — a first-time buyer in Ontario — and see how his questions turn into confidence.</p>
 </header>
@@ -99,8 +136,14 @@
 <section>
   <div class="step">
     <h2>Step 1 – Meet Alex</h2>
-    <p><strong>Alex:</strong> "Hi! I’m Alex. I’ve been renting in Mississauga… but buying a home? That feels big."</p>
-    <p><strong>Me:</strong> "Hey Alex — and hey *you*! Let’s walk through this together, step by step."</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "Hi! I’m Alex. I’ve been renting in Mississauga… but buying a home? That feels big."</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "Hey Alex — and hey *you*! Let’s walk through this together, step by step."</p>
+    </div>
     <button class="cta-button">Build Your Budget</button>
   </div>
 </section>
@@ -108,40 +151,70 @@
 <section>
   <div class="step">
     <h2>Step 2 – Figuring Out the Budget</h2>
-    <p><strong>Alex:</strong> "I don’t want to stretch myself thin. How do I know what I can handle?"</p>
-    <p><strong>Me:</strong> "Let’s focus on what feels manageable each month — not just what a bank says."</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "I don’t want to stretch myself thin. How do I know what I can handle?"</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "Let’s focus on what feels manageable each month — not just what a bank says."</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="step">
     <h2>Step 3 – Picking the Right Area</h2>
-    <p><strong>Alex:</strong> "There are so many neighborhoods… how do I even narrow it down?"</p>
-    <p><strong>Me:</strong> "Let’s think about what matters to you. Commute? Schools? Future value?"</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "There are so many neighborhoods… how do I even narrow it down?"</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "Let’s think about what matters to you. Commute? Schools? Future value?"</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="step">
     <h2>Step 4 – Choosing the Type of Home</h2>
-    <p><strong>Alex:</strong> "What’s even the difference? And what’s right for me?"</p>
-    <p><strong>Me:</strong> "Let’s compare: low maintenance, more space, or growth potential?"</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "What’s even the difference? And what’s right for me?"</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "Let’s compare: low maintenance, more space, or growth potential?"</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="step">
     <h2>Step 5 – Offer Time</h2>
-    <p><strong>Alex:</strong> "This part feels intense. What if I mess it up?"</p>
-    <p><strong>Me:</strong> "You’ve got this. Here’s how offers work — and what to avoid."</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "This part feels intense. What if I mess it up?"</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "You’ve got this. Here’s how offers work — and what to avoid."</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="step">
     <h2>Step 6 – The Win</h2>
-    <p><strong>Alex:</strong> "I did it. I bought my first home in Brampton — and I actually felt ready."</p>
-    <p><strong>Me:</strong> "And now it’s your turn. Let’s start your story."</p>
+    <div class="chat">
+      <img src="alex-avatar-placeholder.png" alt="Alex">
+      <p><strong>Alex:</strong> "I did it. I bought my first home in Mississauga — and I actually felt ready."</p>
+    </div>
+    <div class="chat reverse">
+      <img src="avatar.png" alt="Me">
+      <p><strong>Me:</strong> "And now it’s your turn. Let’s start your story."</p>
+    </div>
     <button class="cta-button">Start My Journey</button>
   </div>
 </section>

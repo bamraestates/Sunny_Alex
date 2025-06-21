@@ -97,7 +97,7 @@
       border-radius: 50%;
     }
 
-   /* Cloud-shaped zigzag speech bubble */
+/* Cloud-shaped zigzag speech bubble */
 .chat p {
   font-size: 1.1em;
   line-height: 1.6em;
@@ -105,36 +105,23 @@
   color: var(--white);
   background: rgba(211, 211, 211, 0.6); /* Cloudy grey background */
   padding: 15px 25px;
-  border-radius: 15px;
+  border-radius: 20px;
   max-width: 600px;
   position: relative;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for the cloud effect */
+  overflow: hidden; /* Ensure the jagged edges stay inside */
 }
 
-/* Zigzag effect on the cloud bubble */
+/* Creating the zigzag cloud edges at the top */
 .chat p::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -15px; /* Position the zigzag on the left */
-  width: 30px;
-  height: 30px;
+  top: -10px; /* Slightly above the bubble to create the zigzag effect */
+  left: 0;
+  width: 100%;
+  height: 20px;
   background: rgba(211, 211, 211, 0.6); /* Same grey for the cloud */
-  border-radius: 50%;
-  transform: translateY(-50%) rotate(45deg); /* Create the zigzag effect */
-}
-
-/* Add more zigzag 'cloud' for the speech bubble effect */
-.chat p::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -30px; /* Adjust to create the zigzag gap */
-  width: 30px;
-  height: 30px;
-  background: rgba(211, 211, 211, 0.6); /* Same grey for the cloud */
-  border-radius: 50%;
-  transform: translateY(-50%) rotate(45deg); /* Add another zigzag piece */
+  clip-path: polygon(0% 0%, 10% 40%, 20% 0%, 30% 40%, 40% 0%, 50% 40%, 60% 0%, 70% 40%, 80% 0%, 90% 40%, 100% 0%); /* Zigzag edge */
 }
 
     .cta-button {

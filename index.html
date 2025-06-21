@@ -93,7 +93,7 @@
     }
 
     .chat img {
-      height: 200px; /* "Me" Avatar (avatar1.png) on the left */
+      height: 150px; /* Avatar1 size adjusted to 150px */
       border-radius: 50%;
     }
 
@@ -107,18 +107,22 @@
       border-radius: 20px;
       max-width: 600px;
       position: relative;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
+    /* Zigzag shape for the speech bubble */
     .chat p::before {
       content: '';
       position: absolute;
       top: 50%;
-      left: -10px;
+      left: -12px;
       width: 0;
       height: 0;
-      border-left: 10px solid rgba(211, 211, 211, 0.6); /* Cloudy grey */
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid rgba(211, 211, 211, 0.6); /* Same grey for the zigzag */
       transform: translateY(-50%);
     }
 

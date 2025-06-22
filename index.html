@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bamra Estates | Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-light: #fff1a8;
+      --gold-mid: #ffd700;
+      --gold-dark: #e5ac00;
+      --black: #000000;
+      --white: #FFFFFF;
+      --grey-light: #d3d3d3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 20px 30px;
+      text-align: center;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-flex img {
+      height: 150px; /* Avatar size */
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      font-size: 1.5em;
+      color: var(--gold-light);
+    }
+
+    .intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .intro img {
+      border-radius: 50%;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .intro h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .intro p {
+      font-size: 1.2em;
+      color: var(--white);
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      color: var(--black);
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--gold-mid);
+    }
+
+    section {
+      padding: 60px 20px;
+      border-top: 1px solid var(--gold-mid);
+      background-color: var(--black);
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    section p {
+      font-size: 1.2em;
+      text-align: center;
+      color: var(--gold-light);
+    }
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="video-background" autoplay muted loop>
+    <source src="luxury_home_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-flex">
+      <img src="your_picture.jpg" alt="Sunny Bamra Picture">
+      <img src="avatar.png" alt="Sunny's Avatar">
+    </div>
+    <h1>Welcome to Bamra Estates</h1>
+    <p>"Rooted in Trust. Built for Legacy"</p>
+  </header>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <img src="your_picture.jpg" alt="Sunny Bamra">
+    <h2>Meet Sunny Bamra</h2>
+    <p>Welcome to Bamra Estates! I’m Sunny Bamra, and I’m here to help you navigate Ontario’s real estate market. With years of experience, I’m passionate about helping you find your dream home. My trusted virtual assistant will guide you throughout your real estate journey!</p>
+  </section>
+
+  <!-- CTA Buttons for Squads -->
+  <section>
+    <h2>Your Real Estate Journey Starts Here</h2>
+    <p>Whether you're buying, selling, or exploring opportunities, we’ve got you covered.</p>
+    <div class="cta-buttons">
+      <a href="buyer-squad.html" class="cta-button">Buyer Squad</a>
+      <a href="seller-squad.html" class="cta-button">Seller Squad</a>
+      <a href="greek-squad.html" class="cta-button">Greek Squad</a>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -88,17 +88,23 @@
     }
 
     .avatar-intro {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 60px;
+     width: 100%; /* Ensures the avatar container takes full available width */
+     padding: 0 20px; /* Optional: for extra space around avatar */
     }
 
     .avatar-intro img {
-      border-radius: 50%;
-      max-width: 150px;
-      margin-bottom: 20px;
+     border-radius: 50%;
+     max-width: 300px; /* Set maximum width for the avatar */
+     max-height: 300px; /* Set maximum height for the avatar */
+     width: 100%; /* Ensures the image fills the container width */
+     height: auto; /* Maintains the aspect ratio */
+     object-fit: cover; /* Ensures image is properly scaled and cropped if needed */
+     margin-bottom: 20px;
     }
 
     .avatar-intro h2 {

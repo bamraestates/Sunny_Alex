@@ -109,6 +109,7 @@
   max-width: 600px;
   position: relative;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for a 3D effect */
+  overflow: hidden; /* Prevent jagged edge from overflowing */
 }
 
 /* The point of the cloud (at the bottom) */
@@ -123,6 +124,7 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid rgba(211, 211, 211, 0.6); /* Same color as cloud background */
+  clip-path: polygon(50% 0%, 60% 25%, 70% 0%, 80% 25%, 90% 0%, 100% 25%, 110% 0%); /* Jagged zigzag edge */
 }
 
 

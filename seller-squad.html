@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bamra Estates | Seller's Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-light: #fff1a8;
+      --gold-mid: #ffd700;
+      --gold-dark: #e5ac00;
+      --black: #000000;
+      --white: #FFFFFF;
+      --grey-light: #d3d3d3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    header {
+      padding: 40px 20px 30px;
+      text-align: center;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+    }
+
+    .header-flex img {
+      height: 200px; /* Main avatar size */
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: var(--gold-light);
+    }
+
+    section {
+      padding: 60px 20px;
+      border-bottom: 1px solid var(--gold-mid);
+      background-color: var(--black);
+    }
+
+    section:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    .step {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .step h2 {
+      font-size: 1.8em;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .chat {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .chat.reverse {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    .chat img {
+      height: 150px; /* Avatar size adjusted to 150px */
+      border-radius: 50%;
+    }
+
+    .chat p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      margin: 0;
+      color: var(--black); /* Text color */
+      background: rgba(169, 169, 169, 0.8); /* Grey cloud background */
+      padding: 20px 30px;
+      border-radius: 30px; /* Rounded edges for cloud shape */
+      max-width: 600px;
+      position: relative;
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+      overflow: hidden;
+    }
+
+    .chat p::before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background: rgba(169, 169, 169, 0.8); /* Same grey for the jagged edge */
+      clip-path: polygon(0% 100%, 10% 60%, 20% 100%, 30% 60%, 40% 100%, 50% 60%, 60% 100%, 70% 60%, 80% 100%, 90% 60%, 100% 100%);
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      color: var(--black);
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--gold-mid);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-flex">
+    <img src="logo.png" alt="Bamra Estates Logo" style="height: 300px; max-width: 100%; width: auto;">
+    <img src="avatar.png" alt="Sunny Avatar"> <!-- Main avatar at top right -->
+  </div>
+  <h1>Let’s Make Your Selling Journey Simple & Fun</h1>
+  <p>Follow Kelly — a home seller — and see how we can turn your questions into confidence.</p>
+</header>
+
+<section>
+  <div class="step">
+    <h2>Step 1 – Meet Kelly</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly"> <!-- Kelly avatar placeholder -->
+      <p><strong>Kelly:</strong> "Hi! I’m Kelly. I’ve lived in my home for years, but now it’s time to sell. There’s a lot to consider, but I’m ready to make a move!"</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "Hey Kelly — and hey *you*! Let’s take this journey step by step, and I’ll guide you through everything from listing to closing."</p>
+    </div>
+    <button class="cta-button">Get Started</button>
+  </div>
+</section>
+
+<section>
+  <div class="step">
+    <h2>Step 2 – Preparing Your Home for Sale</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly">
+      <p><strong>Kelly:</strong> "I’m thinking about repairs, maybe some fresh paint... but where do I even start?"</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "We’ll start by staging, making key repairs, and cleaning to make your home look its best to attract buyers."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="step">
+    <h2>Step 3 – Setting the Right Price</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly">
+      <p><strong>Kelly:</strong> "How do I know what price to list my home at? I don’t want to underprice or overprice."</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "We’ll look at recent sales in your area and determine a competitive price that reflects your home’s value."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="step">
+    <h2>Step 4 – Marketing Your Home</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly">
+      <p><strong>Kelly:</strong> "How can I get my home noticed? What about photos and marketing?"</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "We’ll get professional photos, a video tour, and use online platforms to showcase your home to the right buyers."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="step">
+    <h2>Step 5 – Reviewing Offers</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly">
+      <p><strong>Kelly:</strong> "What happens once offers come in? How do I know which one to choose?"</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "We’ll review each offer carefully, including price, terms, and the buyer’s ability to close. It’s all about the right fit."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="step">
+    <h2>Step 6 – Closing the Deal</h2>
+    <div class="chat">
+      <img src="kelly.png" alt="Kelly">
+      <p><strong>Kelly:</strong> "It’s almost time to close! What happens now?"</p>
+    </div>
+    <div class="chat">
+      <img src="avatar1.png" alt="Me">
+      <p><strong>Me:</strong> "We’ll finalize everything. Once we sign, the keys are officially handed over to the new owners."</p>
+    </div>
+    <button class="cta-button">Start Your Journey</button>
+  </div>
+</section>
+
+</body>
+</html>

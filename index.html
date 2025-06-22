@@ -124,18 +124,6 @@
   transform: rotate(180deg); /* Invert the shape to make the jagged part point up */
 }
 
-.chat p::after {
-  content: '';
-  position: absolute;
-  bottom: -15px; /* Create the tail with a slight overlap */
-  left: 50%; /* Position it in the center */
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid rgba(169, 169, 169, 0.8); /* Jagged point in the same grey */
-  transform: translateX(-50%);
-}
 
 
     .cta-button {

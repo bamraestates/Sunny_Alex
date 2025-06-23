@@ -271,17 +271,18 @@
       </style>
 </head>
 <body>
-  <!-- Scrollable Section with Background Video -->
-  <div class="video-background">
-    <video autoplay loop muted>
-      <source src="oakville_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="video-content">
-      <h1>Welcome to Bamra Estates</h1>
-      <p>"Rooted in Trust. Built for Legacy"</p>
-    </div>
+ <!-- Scrollable Section with Background Video -->
+<div class="video-background">
+  <video id="background-video" autoplay loop muted>
+    <source id="video-source" src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-content">
+    <h1>Welcome to Bamra Estates</h1>
+    <p>"Rooted in Trust. Built for Legacy"</p>
   </div>
+</div>
+
 
   <!-- Header Section -->
  <header>
@@ -322,6 +323,24 @@
   </div>
   <p>&copy; 2025 Bamra Estates | Toronto Real Estate Realty Plus Inc. |  All Rights Reserved. </p>
 </footer>
+
+  <script>
+  const videoElement = document.getElementById('background-video');
+  const videoSource = document.getElementById('video-source');
+  const videoFiles = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4']; // Add the video file names here
+  let currentVideoIndex = 0;
+
+  // Function to change the video source when the current video ends
+  function changeVideo() {
+    currentVideoIndex = (currentVideoIndex + 1) % videoFiles.length; // Loop back to the first video
+    videoSource.src = videoFiles[currentVideoIndex];
+    videoElement.load(); // Reload the video element
+    videoElement.play(); // Play the new video
+  }
+
+  // Event listener for the "ended" event to trigger video change
+  videoElement.addEventListener('ended', changeVideo);
+</script>
 
     
 </body>

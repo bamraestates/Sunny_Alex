@@ -184,7 +184,47 @@
       text-align: center;
       color: var(--gold-light);
     }
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
 
+  header p {
+    font-size: 1.2em;
+  }
+
+  .intro h2, .avatar-intro h2 {
+    font-size: 2em;
+  }
+
+  .intro p, .avatar-intro p {
+    font-size: 1em;
+    max-width: 90%;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+  }
+
+  .avatar-intro img {
+    max-width: 250px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .footer-logo img {
+    height: 200px;
+  }
+}
       </style>
 </head>
 <body>

@@ -7,16 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
 
-
-
-/* Footer Section Styling */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #fff1a8;
-      }
-
-
     :root {
       --gold-light: #fff1a8;
       --gold-mid: #ffd700;
@@ -25,15 +15,7 @@ footer {
       --white: #FFFFFF;
       --grey-light: #d3d3d3;
     }
-/* Footer Styles */
-    footer {
-      text-align: center; /* Centers the text */
-      font-size: 1.1em;
-      color: var(--gold-light);
-      background-color: var(--black); /* Matches background color */
-      padding: 20px;
-      margin-top: 60px;
-    }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -56,10 +38,6 @@ footer {
       padding: 0 20px;
     }
 
-    .header-flex img {
-      height: 150px; /* Avatar size */
-    }
-
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
@@ -73,6 +51,22 @@ footer {
     header p {
       font-size: 1.5em;
       color: var(--gold-light);
+    }
+
+    /* Footer Section Styling */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #fff1a8;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.1em;
+      color: var(--gold-light);
+      background-color: var(--black);
+      padding: 20px;
+      margin-top: 60px;
     }
 
     .intro {
@@ -107,23 +101,23 @@ footer {
     }
 
     .avatar-intro {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     margin-top: 60px;
-     width: 100%; /* Ensures the avatar container takes full available width */
-     padding: 0 20px; /* Optional: for extra space around avatar */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 60px;
+      width: 100%;
+      padding: 0 20px;
     }
 
     .avatar-intro img {
-     border-radius: 50%;
-     max-width: 300px; /* Set maximum width for the avatar */
-     max-height: 300px; /* Set maximum height for the avatar */
-     width: 100%; /* Ensures the image fills the container width */
-     height: auto; /* Maintains the aspect ratio */
-     object-fit: cover; /* Ensures image is properly scaled and cropped if needed */
-     margin-bottom: 20px;
+      border-radius: 50%;
+      max-width: 300px;
+      max-height: 300px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
 
     .avatar-intro h2 {
@@ -192,6 +186,14 @@ footer {
       z-index: -1;
     }
 
+    /* Logo at bottom right */
+    .logo-bottom-right {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+    }
+
   </style>
 </head>
 <body>
@@ -238,6 +240,11 @@ footer {
 <footer>
   <p>&copy; 2025 Bamra Estates | Toronto Real Estate Realty Plus Inc. |  All Rights Reserved. </p>
 </footer>
+
+  <!-- Logo at the bottom right -->
+  <div class="logo-bottom-right">
+    <img src="logo.png" alt="Bamra Estates Logo" style="height: 100px; max-width: 100%; width: auto;">
+  </div>
   
 </body>
 </html>

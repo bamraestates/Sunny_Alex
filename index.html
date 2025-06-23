@@ -327,16 +327,26 @@
   <script>
   const videoElement = document.getElementById('background-video');
   const videoSource = document.getElementById('video-source');
-  const videoFiles = ['video1.mp4', 'video2.mp4']; // Add the video file names here
+  const videoFiles = [
+  { src: 'video1.mp4', heading: 'Welcome to Bamra Estates', paragraph: '"Rooted in Trust. Built for Legacy"' },
+  { src: 'video2.mp4', heading: 'Discover Your Dream Home', paragraph: '"Find the perfect home for you!"' },
+  { src: 'video3.mp4', heading: 'Expert Guidance Every Step of the Way', paragraph: '"We make your real estate journey easy."' },
+  { src: 'video4.mp4', heading: 'Your Trusted Partner in Real Estate', paragraph: '"Experience excellence in every transaction."' },
+  { src: 'video5.mp4', heading: 'Your Future Starts Here', paragraph: '"Let’s make your dream home a reality."' }
+];
   let currentVideoIndex = 0;
 
   // Function to change the video source when the current video ends
   function changeVideo() {
-    currentVideoIndex = (currentVideoIndex + 1) % videoFiles.length; // Loop back to the first video
-    videoSource.src = videoFiles[currentVideoIndex];
-    videoElement.load(); // Reload the video element
-    videoElement.play(); // Play the new video
-  }
+  currentVideoIndex = (currentVideoIndex + 1) % videoFiles.length; // Loop through all 5 videos
+  videoSource.src = videoFiles[currentVideoIndex].src; // Update the video source
+  document.querySelector('.video-content h1').textContent = videoFiles[currentVideoIndex].heading; // Update heading
+  document.querySelector('.video-content p').textContent = videoFiles[currentVideoIndex].paragraph; // Update paragraph
+  videoElement.load(); // Reload the video element
+  setTimeout(() => {
+    videoElement.play(); // Play the new video after a slight delay
+  }, 100); // Small delay before playing the new video
+}
 
   // Event listener for the "ended" event to trigger video change
   videoElement.addEventListener('ended', changeVideo);

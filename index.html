@@ -6,32 +6,32 @@
   <title>Bamra Estates | Welcome</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    
-/* Background Video Styling */
+
+    /* Background Video Styling */
 .video-background {
-  position: fixed;
+  position: fixed; /* Fix the video to the screen */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;  /* Keeps the video behind the content */
+  object-fit: cover;  /* Ensures video covers the screen */
+  z-index: -1; /* Ensure the video stays behind everything */
 }
 
 /* Main content positioning */
 .main-content {
   position: relative;
   z-index: 1;
-  padding-top: 100px;  /* Adjust space between video and header */
+  padding-top: 100px; /* Space between video and header */
   text-align: center;
 }
 
 /* Header Styling */
 header {
-  position: absolute;
-  top: 20%;  /* Adjust space for header, 20% down from top */
+  position: absolute; /* Position header over video */
+  top: 25%;  /* Moves header 25% down from top */
   left: 50%;
-  transform: translateX(-50%);  /* Centers header */
+  transform: translateX(-50%);  /* Centers header horizontally */
   text-align: center;
   color: white;
   z-index: 2;  /* Ensures header is above the video */
@@ -53,11 +53,11 @@ header p {
 /* Logo Styling */
 .logo {
   position: fixed;
-  bottom: 20px;  /* Fixed position at the bottom */
+  bottom: 20px;  /* Fixed at the bottom */
   left: 50%;
-  transform: translateX(-50%);  /* Centers the logo horizontally */
+  transform: translateX(-50%);  /* Centered horizontally */
   height: 150px;  /* Adjust logo size */
-  z-index: 2;  /* Keeps logo above the video */
+  z-index: 2;  /* Keeps logo above video */
 }
 
 /* Intro Section Styling */
@@ -73,6 +73,8 @@ footer {
   margin-top: 40px;
   color: #fff1a8;
 }
+
+
     :root {
       --gold-light: #fff1a8;
       --gold-mid: #ffd700;

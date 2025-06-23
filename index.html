@@ -6,6 +6,61 @@
   <title>Bamra Estates | Welcome</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Background Video Styling */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Main content positioning */
+.main-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px; /* Space between video and header */
+  text-align: center;
+}
+
+/* Header Text Styling */
+header h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, #fff1a8, #ffd700, #e5ac00);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.5em;
+  color: #fff1a8;
+}
+
+/* Logo Styling */
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  height: 150px;  /* Adjust this to make logo the right size */
+  z-index: 10;
+}
+
+/* Intro Section */
+.intro img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #fff1a8;
+}
     :root {
       --gold-light: #fff1a8;
       --gold-mid: #ffd700;

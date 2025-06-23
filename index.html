@@ -273,7 +273,7 @@
 <body>
  <!-- Scrollable Section with Background Video -->
 <div class="video-background">
-  <video id="background-video" autoplay loop muted>
+  <video id="background-video" autoplay muted>
     <source id="video-source" src="video1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -327,7 +327,7 @@
   <script>
   const videoElement = document.getElementById('background-video');
   const videoSource = document.getElementById('video-source');
-  const videoFiles = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4', 'video5.mp4']; // Add the video file names here
+  const videoFiles = ['video1.mp4', 'video2.mp4']; // Add the video file names here
   let currentVideoIndex = 0;
 
   // Function to change the video source when the current video ends

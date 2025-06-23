@@ -151,6 +151,73 @@
       transform: scale(1.05);
       box-shadow: 0 0 10px var(--gold-mid);
     }
+    /* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Header text size */
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  /* Adjust avatars in the header */
+  .header-flex img {
+    height: 150px;
+  }
+
+  /* Adjust chat bubble text size */
+  .chat p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  /* Adjust the "step" title size */
+  .step h2 {
+    font-size: 1.5em;
+  }
+
+  /* Make the chat layout vertical */
+  .chat {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Adjust button sizes */
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  /* Chat bubble text size */
+  .chat p {
+    font-size: 0.9em;
+    padding: 15px 20px;
+  }
+}
+
   </style>
 </head>
 <body>

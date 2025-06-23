@@ -38,6 +38,19 @@
       background-color: var(--black);
     }
 
+     .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+    }
+
+    .header-flex img {
+      height: 200px; /* Main avatar size */
+    }
+
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
@@ -155,6 +168,9 @@
 <body>
 
 <header>
+  <div class="header-flex">
+    <img src="avatar.png" alt="Sunny Avatar"> <!-- Main avatar at top right -->
+  </div>
   <h1>Geek Squad: Bamra Estates Knowledge Hub</h1>
   <p>Learn, Explore, and Dive into Real Estate with Sunny</p>
 </header>

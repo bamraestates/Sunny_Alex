@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geek Squad | Bamra Estates Knowledge Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-light: #fff1a8;
+      --gold-mid: #ffd700;
+      --gold-dark: #e5ac00;
+      --black: #000000;
+      --white: #FFFFFF;
+      --grey-light: #d3d3d3;
+    }
+
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    header {
+      padding: 40px 20px 30px;
+      text-align: center;
+      background-color: var(--black);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: var(--gold-light);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      background-color: var(--black);
+      border-bottom: 1px solid var(--gold-mid);
+    }
+
+    section:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    .episode-row {
+      display: flex;
+      overflow-x: scroll;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .episode-card {
+      background-color: var(--black);
+      border: 2px solid var(--gold-light);
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .episode-card:hover {
+      transform: scale(1.05);
+    }
+
+    .episode-card img {
+      width: 100%;
+      height: 150px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+
+    .episode-card h3 {
+      font-size: 1.2em;
+      margin: 15px 0;
+      color: var(--gold-light);
+    }
+
+    .episode-card p {
+      font-size: 1em;
+      color: var(--grey-light);
+      padding: 0 10px;
+      margin-bottom: 15px;
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      color: var(--black);
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--gold-mid);
+    }
+
+    /* Mobile Responsiveness */
+    @media only screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+
+      .episode-row {
+        gap: 15px;
+      }
+
+      .episode-card {
+        width: 200px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .episode-card {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Geek Squad: Bamra Estates Knowledge Hub</h1>
+  <p>Learn, Explore, and Dive into Real Estate with Sunny</p>
+</header>
+
+<section>
+  <h2>Featured Episodes</h2>
+  <div class="episode-row">
+    <div class="episode-card">
+      <img src="buying-ontario.jpg" alt="Buying in Ontario">
+      <h3>Buying in Ontario: Start Here</h3>
+      <p>Get started on your journey to becoming a homeowner in Ontario.</p>
+      <button class="cta-button">Watch Now</button>
+    </div>
+    <div class="episode-card">
+      <img src="credit-score.jpg" alt="Credit Score Boosters">
+      <h3>Credit Score Boosters</h3>
+      <p>Tips and tricks to raise your credit score before buying a home.</p>
+      <button class="cta-button">Watch Now</button>
+    </div>
+    <div class="episode-card">
+      <img src="sunnys-weekly-picks.jpg" alt="Sunny's Weekly Picks">
+      <h3>Sunny's Weekly Picks</h3>
+      <p>Hand-picked properties, tips, and advice from Sunny himself.</p>
+      <button class="cta-button">Watch Now</button>
+    </div>
+    <div class="episode-card">
+      <img src="fun-facts.jpg" alt="Reel Estate: Fun Facts">
+      <h3>Reel Estate: Fun Facts with Sunny</h3>
+      <p>Enjoy some fun facts and cool real estate trivia with Sunny.</p>
+      <button class="cta-button">Watch Now</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo-bottom-right">
+    <img src="logo.png" alt="Bamra Estates Logo" style="height: 100px; max-width: 100%; width: auto;">
+  </div>
+  <p>&copy; 2025 Bamra Estates | Toronto Real Estate Realty Plus Inc. | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

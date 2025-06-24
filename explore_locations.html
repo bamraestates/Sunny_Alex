@@ -144,7 +144,7 @@
       margin: 0 auto 30px;
     }
 
-    /* Quiz Modal Styles */
+ /* Quiz Modal Styles */
 .quiz-modal {
   display: none;
   position: fixed;
@@ -154,14 +154,15 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
 }
 
 .quiz-modal-content {
-  background-color: #fefefe;
+  background-color: var(--black); /* Matches website background */
+  color: var(--gold-light); /* Text color to match overall theme */
   margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 30px;
+  border-radius: 12px;
   width: 80%;
   max-width: 500px;
   text-align: center;
@@ -170,31 +171,45 @@
 .quiz-modal h3 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: var(--gold-light); /* Header in matching gold */
 }
 
-.quiz-modal input, .quiz-modal select {
+.quiz-modal label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.quiz-modal select {
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  width: 100%;
+  background-color: var(--black); /* Matching background */
+  color: var(--gold-light); /* Text color */
+  border: 1px solid var(--gold-mid); /* Border to match theme */
   font-size: 1.1em;
+  border-radius: 8px;
 }
 
 .quiz-modal button {
-  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)); /* Gold gradient button */
   color: var(--black);
   padding: 12px 24px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 .quiz-modal button:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px var(--gold-mid); /* Hover effect */
 }
 
 .close {
-  color: #aaa;
+  color: var(--gold-light); /* Close button color */
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -202,10 +217,27 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--gold-light);
   text-decoration: none;
   cursor: pointer;
 }
+
+.cta-button {
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)); /* Consistent CTA styling */
+  color: var(--black);
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--gold-mid); /* Hover effect */
+}
+
 
 .service-areas {
       padding: 60px 20px;

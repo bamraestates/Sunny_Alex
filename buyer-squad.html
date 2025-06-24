@@ -138,24 +138,42 @@
   clip-path: polygon(0% 100%, 10% 60%, 20% 100%, 30% 60%, 40% 100%, 50% 60%, 60% 100%, 70% 60%, 80% 100%, 90% 60%, 100% 100%); /* Zigzag bottom */
 }
 
+.navigation-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center; /* Ensures the heading is centered */
+}
 
 
-    .cta-button {
-      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
-      color: var(--black);
-      padding: 12px 24px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+  .cta-buttons {
+  display: flex;
+  justify-content: center; /* Aligns the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 40px; /* Adds space above the buttons */
+}
 
-    .cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 10px var(--gold-mid);
-    }
+.cta-button {
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  color: var(--black);
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Ensures no underline */
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--gold-mid);
+}
+
     /* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
   /* Header text size */

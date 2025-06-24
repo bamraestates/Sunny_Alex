@@ -365,6 +365,51 @@
         padding: 10px;
       }
     }
+    .navigation-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  background-clip: text;
+  color: transparent;
+  text-align: center; /* Centers the heading horizontally */
+  -webkit-background-clip: text; /* For better gradient support */
+  -webkit-text-fill-color: transparent; /* Text should be transparent to see the gradient */
+  display: block; /* Ensure it behaves like a block element */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content; /* Adjust width to content size */
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds space between buttons */
+  flex-wrap: wrap; /* Wraps buttons if the screen is too small */
+  margin-top: 30px; /* Adds space above the buttons */
+}
+
+.cta-buttons a {
+  text-decoration: none; /* Ensures no underline */
+  color: var(--black); /* Button text color */
+  padding: 12px 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.cta-buttons a:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 10px var(--gold-mid); /* Adds a glowing effect */
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 10px; /* Reduced gap between stacked buttons */
+  }
+}
+
   </style>
 </head>
 <body>
@@ -489,6 +534,17 @@ function submitQuiz() {
     <span>Brampton</span>
   </div>
   </section>
+
+  <section>
+  <h2 class="navigation-heading">Navigation</h2>
+  <div class="cta-buttons">
+    <a href="index.html" class="cta-button">Homepage</a>
+    <a href="seller-squad.html" class="cta-button">Seller Squad</a>
+    <a href="buyer-squad.html" class="cta-button">Buyer Squad</a> <!-- Add Buyer Squad reference -->
+    <a href="geek-squad.html" class="cta-button">Geek Squad</a>
+     </div>
+</section>
+
 
 <!-- Add Tidio Chatbot Script here -->
   <script src="//code.tidio.co/7tmb3buroslrtaxukeqp9i975prunsad.js" async></script>

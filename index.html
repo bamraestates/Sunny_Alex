@@ -322,6 +322,21 @@
       text-align: center;
       color: var(--gold-light);
     }
+    .navigation-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+  background-clip: text;
+  color: transparent;
+  text-align: center; /* Centers the heading horizontally */
+  -webkit-background-clip: text; /* For better gradient support */
+  -webkit-text-fill-color: transparent; /* Text should be transparent to see the gradient */
+  display: block; /* Ensure it behaves like a block element */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content; /* Adjust width to content size */
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
   header h1 {
@@ -422,9 +437,8 @@
 
   <!-- CTA Buttons for Squads -->
   <section>
-    <h2>Your Real Estate Journey Starts Here</h2>
-    <p>Whether you're buying, selling, or exploring opportunities, we’ve got you covered.</p>
-    <div class="cta-buttons">
+    <h2 class="navigation-heading">Navigation</h2>
+        <div class="cta-buttons">
       <a href="buyer-squad.html" class="cta-button">Buyer Squad</a>
       <a href="seller-squad.html" class="cta-button">Seller Squad</a>
       <a href="geek-squad.html" class="cta-button">Geek Squad</a>

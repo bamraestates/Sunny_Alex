@@ -144,25 +144,18 @@
       margin: 0 auto 30px;
     }
 
-    .service-areas {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: var(--black);
-    }
+    service-areas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
-    .service-areas h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    .service-areas p {
-      font-size: 1.2em;
-      color: var(--gold-light);
-    }
-
+.service-areas-list span {
+  font-size: 1.2em;
+  color: var(--gold-light);
+  margin: 5px;
+}
     footer {
       text-align: center;
       font-size: 1.1em;
@@ -242,14 +235,14 @@
   <section class="service-areas">
     <h2>Our Service Areas</h2>
     <p>We proudly serve the following areas in Ontario:</p>
-    <ul>
-      <li>Oakville</li>
-      <li>Milton</li>
-      <li>Burlington</li>
-      <li>Georgetown</li>
-      <li>Mississauga</li>
-      <li>Halton Hills</li>
-    </ul>
+   <div class="service-areas-list">
+    <span>Oakville</span>
+    <span>Milton</span>
+    <span>Burlington</span>
+    <span>Georgetown</span>
+    <span>Mississauga</span>
+    <span>Halton Hills</span>
+  </div>
   </section>
 
   <!-- Footer Section -->

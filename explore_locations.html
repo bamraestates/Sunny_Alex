@@ -143,6 +143,42 @@
       color: var(--gold-light);
       margin: 0 auto 30px;
     }
+/* Quiz Section Styles */
+.quiz-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--gold-light); /* Matches website text color */
+}
+
+.quiz-section h2 {
+  font-size: 2em; /* Adjusted for alignment with other section headings */
+  margin-bottom: 20px;
+  color: var(--gold-light); /* Consistent text color */
+  font-weight: bold; /* Matching the boldness of other headings */
+}
+
+.quiz-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: var(--gold-light); /* Text color */
+}
+
+.quiz-section .cta-button {
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)); /* Gold gradient button */
+  color: var(--black);
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-section .cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--gold-mid); /* Hover effect */
+}
 
  /* Quiz Modal Styles */
 .quiz-modal {
@@ -352,9 +388,9 @@
     <form id="quizForm">
       <label for="question1">Are you a:</label>
       <select id="question1" name="question1">
-        <option value="buyer">Buyer</option>
-        <option value="seller">Seller</option>
-        <option value="investor">Investor</option>
+        <option value="Buyer">Buyer</option>
+        <option value="Seller">Seller</option>
+        <option value="Investor">Investor</option>
       </select><br><br>
       
       <label for="question2">What's your budget range?</label>
@@ -371,10 +407,10 @@
         <option value="burlington">Burlington</option>
         <option value="mississauga">Mississauga</option>
         <option value="georgetown">Georgetown</option>
-        <option value="halton">Halton Hills</option>
+        <option value="brampton">Brampton</option>
       </select><br><br>
       
-      <button type="button" onclick="submitQuiz()">Submit</button>
+      <button type="button" class="cta-button" onclick="submitQuiz()">Submit</button>
     </form>
   </div>
 </div>

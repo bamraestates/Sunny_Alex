@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bamra Estates | Explore Locations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-light: #fff1a8;
+      --gold-mid: #ffd700;
+      --gold-dark: #e5ac00;
+      --black: #000000;
+      --white: #FFFFFF;
+      --grey-light: #d3d3d3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 20px 30px;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    /* Featured Listings Section */
+    .featured-listings {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--black);
+    }
+
+    .featured-listings h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .listing-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .listing-card {
+      background-color: var(--grey-light);
+      padding: 20px;
+      width: 280px;
+      height: 350px;
+      color: var(--black);
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .listing-card:hover {
+      transform: scale(1.05);
+    }
+
+    .listing-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .listing-card h3 {
+      font-size: 1.6em;
+      margin: 10px 0;
+      color: var(--black);
+    }
+
+    .listing-card p {
+      font-size: 1.2em;
+      color: var(--gold-light);
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      color: var(--black);
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--gold-mid);
+    }
+
+    /* Featured Locations Section */
+    .map-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--black);
+    }
+
+    .map-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .map-section p {
+      font-size: 1.2em;
+      color: var(--gold-light);
+      margin: 0 auto 30px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.1em;
+      color: var(--gold-light);
+      background-color: var(--black);
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer img {
+      height: 150px;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-size: 1.2em;
+      }
+
+      .featured-listings h2, .map-section h2 {
+        font-size: 2em;
+      }
+
+      .listing-cards {
+        flex-direction: column;
+      }
+
+      footer {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-flex">
+      <h1>Bamra Estates</h1>
+    </div>
+  </header>
+
+  <!-- Featured Listings Section -->
+  <section class="featured-listings">
+    <h2>Featured Listings</h2>
+    <div class="listing-cards">
+      <div class="listing-card">
+        <img src="house1.jpg" alt="Featured House 1">
+        <h3>Luxury Condo in Downtown</h3>
+        <p>$850,000 | 2 Bed, 2 Bath</p>
+        <a href="listing1.html" class="cta-button">View Listing</a>
+      </div>
+      <div class="listing-card">
+        <img src="house2.jpg" alt="Featured House 2">
+        <h3>Spacious Suburban Home</h3>
+        <p>$1,200,000 | 4 Bed, 3 Bath</p>
+        <a href="listing2.html" class="cta-button">View Listing</a>
+      </div>
+      <div class="listing-card">
+        <img src="house3.jpg" alt="Featured House 3">
+        <h3>Modern Villa</h3>
+        <p>$2,500,000 | 5 Bed, 4 Bath</p>
+        <a href="listing3.html" class="cta-button">View Listing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Locations Section -->
+  <section class="map-section">
+    <h2>Explore Our Featured Locations</h2>
+    <p>Discover the best places to live in Ontario with Bamra Estates.</p>
+    <!-- Static Google Map Embed -->
+    <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Toronto,Ontario" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <img src="logo.png" alt="Bamra Estates Logo">
+    <p>&copy; 2025 Bamra Estates | Toronto Real Estate Realty Plus Inc. | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

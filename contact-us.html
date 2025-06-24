@@ -6,8 +6,6 @@
   <title>Contact Us | Bamra Estates</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-
-    
     :root {
       --gold-light: #fff1a8;
       --gold-mid: #ffd700;
@@ -25,19 +23,37 @@
       overflow-x: hidden;
     }
 
-    /* Basic Styling */
+    /* Contact Us Section */
     .contact-container {
       padding: 60px 20px;
       text-align: center;
+      background-color: var(--black);
     }
+
+    .contact-container h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .contact-container p {
+      font-size: 1.5em;
+      color: var(--gold-light);
+      margin-bottom: 40px;
+    }
+
     .contact-form {
       max-width: 600px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
+
     .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 12px;
@@ -47,6 +63,11 @@
       background-color: var(--black);
       color: var(--white);
     }
+
+    .contact-form input::placeholder, .contact-form textarea::placeholder {
+      color: var(--gold-light);
+    }
+
     .cta-button {
       background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
       color: var(--black);
@@ -55,11 +76,24 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      text-decoration: none;
     }
+
     .cta-button:hover {
       transform: scale(1.05);
       box-shadow: 0 0 10px var(--gold-mid);
     }
+
+    /* Footer Section Styling */
+    footer {
+      text-align: center;
+      font-size: 1.1em;
+      color: var(--gold-light);
+      background-color: var(--black);
+      padding: 20px;
+      margin-top: 60px;
+    }
+
   </style>
 </head>
 <body>
@@ -76,6 +110,10 @@
       <button type="submit" class="cta-button">Send Message</button>
     </form>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Bamra Estates | Toronto Real Estate Realty Plus Inc. | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>

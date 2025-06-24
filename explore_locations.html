@@ -38,7 +38,7 @@
     }
 
     .header-flex img {
-      height: 200px;
+      height: 200px; /* Avatar size */
     }
 
     header h1 {
@@ -55,15 +55,19 @@
       color: var(--gold-light);
     }
 
-    /* Section Styles */
-    section {
+    /* Featured Listings Section */
+    .featured-listings {
       padding: 60px 20px;
+      text-align: center;
       background-color: var(--black);
-      border-bottom: 1px solid var(--gold-mid);
     }
 
-    section:nth-child(even) {
-      background-color: #1a1a1a;
+    .featured-listings h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark));
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .listing-cards {
@@ -123,7 +127,13 @@
       box-shadow: 0 0 10px var(--gold-mid);
     }
 
-    /* Google Map Section */
+    /* Featured Locations Section */
+    .map-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--black);
+    }
+
     .map-section h2 {
       font-size: 2.5em;
       margin-bottom: 20px;
@@ -157,8 +167,12 @@
         font-size: 2.5em;
       }
 
-      section {
-        padding: 40px 15px;
+      header p {
+        font-size: 1.2em;
+      }
+
+      .featured-listings h2, .map-section h2 {
+        font-size: 2em;
       }
 
       .listing-cards {
@@ -176,7 +190,7 @@
   <!-- Header Section -->
   <header>
     <div class="header-flex">
-      <img src="sunny-avatar.png" alt="Sunny Avatar"> <!-- Your avatar image -->
+      <img src="sunny-avatar.png" alt="Sunny Avatar"> <!-- Avatar image at the top right -->
       <h1>Bamra Estates</h1>
     </div>
     <p>Explore Featured Locations with Us</p>

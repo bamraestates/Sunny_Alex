@@ -118,6 +118,7 @@
       padding: 0 10px;
       margin-bottom: 15px;
     }
+    
 .navigation-heading {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -131,6 +132,30 @@
   margin-left: auto;
   margin-right: auto;
   max-width: fit-content; /* Adjust width to content size */
+}
+
+    .cta-button {
+  text-decoration: none; /* Ensures no underline */
+  color: var(--black); /* Button text color */
+  padding: 12px 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)); /* Applying gold gradient */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: inline-block; /* Ensures the button is inline-block */
+}
+
+    /* If the button is wrapped in an anchor tag */
+.cta-button a {
+  display: inline-block; /* Ensures the button stays inline */
+  color: inherit; /* Inherit the button's color */
+  text-decoration: none; /* Ensure no underline on link */
+}
+
+.cta-button a:hover {
+  color: inherit; /* Maintain color on hover */
+  text-decoration: none; /* Prevent underline on hover */
 }
 
   .cta-buttons {

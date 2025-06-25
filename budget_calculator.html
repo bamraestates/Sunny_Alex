@@ -66,8 +66,6 @@
   <input type="number" id="downpayment" placeholder="Down Payment ($)" />
   <input type="number" id="interest" placeholder="Interest Rate (%)" />
   <input type="number" id="term" placeholder="Loan Term (Years)" />
-  <input type="number" id="taxes" placeholder="Monthly Property Taxes ($)" />
-  <input type="number" id="heating" placeholder="Monthly Heating Costs ($)" />
   
   <button onclick="calculateMortgage()">Calculate Affordability</button>
 
@@ -89,15 +87,13 @@
     const downpayment = parseFloat(document.getElementById("downpayment").value);
     const interest = parseFloat(document.getElementById("interest").value) / 100;
     const term = parseInt(document.getElementById("term").value) * 12; // Convert years to months
-    const taxes = parseFloat(document.getElementById("taxes").value);
-    const heating = parseFloat(document.getElementById("heating").value);
 
     // Calculate GDS and TDS ratios
     const gdsLimit = 0.32 * income;
     const tdsLimit = 0.44 * income;
 
     // Calculate affordable home price based on GDS and TDS
-    const maxMortgagePayment = gdsLimit - (taxes + heating);
+    const maxMortgagePayment = gdsLimit;
     const maxLoanAmount = (maxMortgagePayment * ((Math.pow(1 + interest / 12, term)) - 1)) / (interest / 12 * Math.pow(1 + interest / 12, term));
     
     const affordableHomePrice = maxLoanAmount + downpayment;
@@ -111,8 +107,8 @@
     document.getElementById("monthly-payment").textContent = `Estimated Monthly Payment: $${monthlyPayment.toFixed(2)}`;
 
     // Check if it meets GDS and TDS limits
-    const gdsStatus = monthlyPayment + taxes + heating <= gdsLimit ? "✔ Meets GDS ratio" : "✘ Exceeds GDS ratio";
-    const tdsStatus = (monthlyPayment + debt + taxes + heating) <= tdsLimit ? "✔ Meets TDS ratio" : "✘ Exceeds TDS ratio";
+    const gdsStatus = monthlyPayment <= gdsLimit ? "✔ Meets GDS ratio" : "✘ Exceeds GDS ratio";
+    const tdsStatus = (monthlyPayment + debt) <= tdsLimit ? "✔ Meets TDS ratio" : "✘ Exceeds TDS ratio";
 
     document.getElementById("gds-status").textContent = gdsStatus;
     document.getElementById("tds-status").textContent = tdsStatus;

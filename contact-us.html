@@ -22,6 +22,51 @@
       color: var(--white);
       overflow-x: hidden;
     }
+
+    /* Force light text and black background on HubSpot forms */
+.hs-form label,
+.hs-form legend,
+.hs-form .hs-richtext,
+.hs-form .hs-field-desc,
+.hs-form .hs-error-msgs,
+.hs-form input,
+.hs-form textarea,
+.hs-form select {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #fff1a8 !important;
+}
+
+/* Placeholder text color */
+.hs-form input::placeholder,
+.hs-form textarea::placeholder,
+.hs-form select::placeholder {
+  color: #fff1a8 !important;
+}
+
+/* Styling radio/checkbox labels */
+.hs-form .hs-form-field input[type="checkbox"] + span,
+.hs-form .hs-form-field input[type="radio"] + span {
+  color: #ffffff !important;
+}
+
+/* Submit button styles */
+.hs-form input[type="submit"] {
+  background: linear-gradient(90deg, #fff1a8, #ffd700, #e5ac00) !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  font-size: 1.1rem !important;
+  cursor: pointer !important;
+  border: none !important;
+}
+
+.hs-form input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffd700;
+}
+
 /* HubSpot form container */
 .contact-form {
   max-width: 600px;

@@ -22,6 +22,64 @@
       color: var(--white);
       overflow-x: hidden;
     }
+/* HubSpot form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6); /* match your original container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+}
+
+/* Input fields */
+.hs-form-field input,
+.hs-form-field select,
+.hs-form-field textarea {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--gold-light) !important;
+  border-radius: 5px !important;
+  padding: 12px !important;
+  width: 100% !important;
+  font-size: 1rem !important;
+  margin-bottom: 20px !important;
+}
+
+/* Placeholder text color */
+.hs-form-field input::placeholder,
+.hs-form-field textarea::placeholder,
+.hs-form-field select::placeholder {
+  color: var(--gold-light) !important;
+}
+
+/* Labels */
+.hs-form-field label {
+  color: var(--gold-light) !important;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Submit button */
+.hs-form-submit {
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)) !important;
+  color: var(--black) !important;
+  font-weight: 700 !important;
+  padding: 12px 24px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  font-size: 1.1rem !important;
+  transition: transform 0.2s ease !important;
+}
+
+.hs-form-submit:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 10px var(--gold-mid) !important;
+}
 
     /* Contact Us Section */
     .contact-container {
@@ -115,31 +173,11 @@
     We’re here to help with your real estate needs. Fill out the form below, and we’ll get back to you as soon as possible!
   </p>
 
-  <!-- Updated Form -->
-  <form class="contact-form" action="https://formsubmit.co/bamraestates@gmail.com" method="POST" style="font-family: 'Montserrat', sans-serif;">
-    <input type="text" name="name" placeholder="Your Name" required 
-           style="padding: 0.8rem; border: none; border-radius: 4px; font-size: 1rem; background-color: #222; color: #fff; margin-bottom: 1rem;">
-    <br>
-    
-    <input type="email" name="email" placeholder="Your Email" required 
-           style="padding: 0.8rem; border: none; border-radius: 4px; font-size: 1rem; background-color: #222; color: #fff; margin-bottom: 1rem;">
-    <br>
-    
-    <input type="tel" name="phone" placeholder="Your Phone (optional)" 
-           style="padding: 0.8rem; border: none; border-radius: 4px; font-size: 1rem; background-color: #222; color: #fff; margin-bottom: 1rem;">
-    <br>
-    
-    <textarea name="message" placeholder="Your Message" rows="4" required 
-              style="padding: 0.8rem; border: none; border-radius: 4px; font-size: 1rem; background-color: #222; color: #fff; margin-bottom: 1rem;"></textarea>
-    <br>
-    
-    <input type="hidden" name="_captcha" value="false">
-    <button type="submit" class="cta-button" 
-            style="background: linear-gradient(90deg, var(--gold-light), var(--gold-mid), var(--gold-dark)); color: var(--black); padding: 1rem; font-weight: 700; border: none; border-radius: 6px; cursor: pointer; font-size: 1.1rem; transition: transform 0.2s ease;">
-      Send Message
-    </button>
-  </form>
-  <small>* This form uses <strong>Formsubmit</strong>. No backend needed.</small>
+ <!-- HubSpot Form Embed -->
+  <div class="contact-form">
+    <script src="https://js-na3.hsforms.net/forms/embed/342112038.js" defer></script>
+    <div class="hs-form-frame" data-region="na3" data-form-id="cdb8b8c3-7bdb-4d42-9235-b5c80aa43864" data-portal-id="342112038"></div>
+  </div>
 </section>
 
 <section id="social">
